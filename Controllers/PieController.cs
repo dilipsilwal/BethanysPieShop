@@ -20,18 +20,26 @@ namespace BethanysPieShop.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        
+
 
         public ViewResult List()
         {
 
             //ViewBag.Message = "Test Message";
             PiesListViewModel piesListViewModel = new()
-            { 
-                Pies = _pieRepository.AllPies,CurrentCategory="Cheese Cake"
+            {
+                Pies = _pieRepository.AllPies,
+                CurrentCategory = "Cheese Cake"
             };
 
             return View(piesListViewModel);
+        }
+        public IActionResult Details(int Id)
+        {
+            var pie = _pieRepository.GetById(Id);
+            if (pie == null)
+                return NotFound();
+            return View(pie);
         }
     }
 }
