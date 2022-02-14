@@ -69,3 +69,4 @@ D:\repo\PluralSight\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\Razor\Views
 D:\repo\PluralSight\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\Razor\Views\Shared\_PieCard.cshtml.g.cs
 D:\repo\PluralSight\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\repo\PluralSight\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\Razor\Views\Shared\_Carousel.cshtml.g.cs
+D:\repo\PluralSight\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\Razor\Views\ShoppingCart\Index.cshtml.g.cs
