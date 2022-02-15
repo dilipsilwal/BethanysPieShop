@@ -34,6 +34,7 @@ namespace BethanysPieShop.Data
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddHttpContextAccessor();
             services.AddSession();
 
@@ -53,6 +54,7 @@ namespace BethanysPieShop.Data
             app.UseStaticFiles();
             app.UseSession();
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
